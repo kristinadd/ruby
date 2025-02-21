@@ -16,9 +16,9 @@ class BankAccount
   # This breaks encapsulation because BankAccount is “asking” 
   # for PremiumAccount’s internal data, then changing it.
   # 
-  #Sandi Metz generally recommends telling an object what to do 
-  #(e.g., “deposit this amount”) rather than asking for data 
-  #to manipulate yourself.
+  # Sandi Metz generally recommends telling an object what to do 
+  # (e.g., “deposit this amount”) rather than asking for data 
+  # to manipulate yourself.
 
   def deposit(amount)
     account.balance += amount

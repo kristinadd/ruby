@@ -6,4 +6,8 @@ class Test
   account = BankAccount.new(premium)
 
   account.deposit(50)
+
+  # puts account.special_emoji
+
+  puts premium.special_emoji
 end

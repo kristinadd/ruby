@@ -1,13 +1,13 @@
 class PremiumAccount
-  attr_accessor :balance
+  attr_accessor :balance, :special_emoji
 
   def initialize()
     @balance = 100
-    @spacial_emoji = "🍉"
+    @special_emoji = "🍉"
   end
 
   def deposit(amount)
-    self.balance = balance + amount
+    @balance = balance + amount
     puts "Amount was deposited"
   end
 
@@ -18,7 +18,7 @@ class PremiumAccount
 end
 
 
-# Even if you've added attr_accessor :balance, and the 
+# Even if you've added attr_accessor :balance, and then
 # 
 # writing:
 # "balance = balance + amount"       inside your method
