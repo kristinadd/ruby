@@ -11,5 +11,5 @@ class Test
     account = BankAccount.new(premium)
     puts account.get_balance
 
-    
+
 end
