@@ -20,4 +20,12 @@ class BankAccount
   def get_holder_name
     account.holder_name
   end
+
+  def deposit(amount)
+    account.deposit(amount)
+  end
+
+  def withdraw(amount)
+    account.withdraw(amount)
+  end
 end

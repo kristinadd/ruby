@@ -3,13 +3,13 @@ require_relative 'BankAccount'
 require_relative 'PremiumAccount'
 
 class Test
-  premium = PremiumAccount.new("Kristy")
-  basic = BasicAccount.new("Bobby")
+    basic = BasicAccount.new("John", 100.00)
+    account = BankAccount.new(basic)
+    puts account.get_balance
 
-  account = BankAccount.new(premium)
+    premium = PremiumAccount.new("Jane", 200.00)
+    account = BankAccount.new(premium)
+    puts account.get_balance
 
-  puts account.get_currency
-  puts account.get_status
-  puts account.get_balance
-  puts account.get_holder_name
+    
 end

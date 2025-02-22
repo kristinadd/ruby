@@ -11,7 +11,7 @@ class BasicAccount<BankAccount
     if amount > 0.00
       @balance = @balance + amount
 
-      return @balance
+      return balance
     end
   end
 
@@ -23,8 +23,7 @@ class BasicAccount<BankAccount
 
       return @balance
     else
-      "Unsufficient balance."
+      puts "Insufficient balance."
     end
   end
-
 end

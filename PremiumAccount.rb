@@ -22,8 +22,7 @@ class PremiumAccount<BankAccount
 
       return @balance
     else
-      puts "Unsufficient balance."
+      puts "Insufficient balance."
     end
   end
-  
 end
